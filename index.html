@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ресторан</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script defer src="jquery-3.4.1.min/jquery-3.4.1.min.js"></script>
+    <script defer src="slick.min/slick.min.js"></script>
+	<script defer src="script/script.js"></script>
+</head>
+<body>
+    <header id="one" class="header">
+        <div class="wrapper wrapper-flex">
+            <div class="menu-left">
+                <nav>
+                    <ul class="menu-left__items menu-items">
+                        <li class="menu-item"><a href="#one">HOME</a></li>
+                        <li class="menu-item"><a href="#two">ABOUT</a></li>
+                        <li class="menu-item"><a href="#three">TEAM</a></li>
+                        <li class="menu-item"><a href="#four">BOOKING</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="logo">
+                <a href="#"><img src="/img/logo/Logo.svg" alt="Logo"></a>
+            </div>
+            <div class="menu-right">
+                <nav>
+                    <ul class="menu-right__items menu-items">
+                        <li class="menu-item"><a href="#five">MENU</a></li>
+                        <li class="menu-item"><a href="#sixth">EVENTS</a></li>
+                        <li class="menu-item"><a href="#seven">GALERIE</a></li>
+                        <li class="menu-item"><a href="#eight">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="wrapper wrapper-flex">
+            <section class="header-content">
+                <div class="header-schedule"><p>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p></div>
+                <div class="header-title">
+                    <p>RESTAURANT</p>
+                    <h1>hungry people</h1>
+                    <span class="header__yellow-line line"></span>
+                    <div class="header-btns">
+                        <a href="#" class="header-btns__item">BOOK TABLE</a>
+                        <a href="#" class="header-btns__item">EXPLORE</a>
+                    </div>
+                    <div class="down-arrow">
+                        <a href="#two"><img src="/img/icon/down-btn.svg" alt=""></a> 
+                    </div>
+                </div>
+                <div class="header-social">
+                    <a><img src="/img/icon/social/facebook.svg" alt="facebook" class="header-social__img"></a>
+                    <a><img src="/img/icon/social/twitter.svg" alt="twitter" class="header-social__img"></a>
+                    <a><img src="/img/icon/social/instagram.svg" alt="instagram" class="header-social__img"></a>
+                </div>
+            </section>
+        </div>
+    </header>
+    <main>
+        <section id="two" class="about">
+            <div class="wrapper">
+                <div class="about-row section__row">
+                    <div class="about-content">
+                        <h2>about us</h2>
+                        <span class="about__yellow-line line"></span>
+                        <p class="about-content__text1 section__text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                        <p class="about-content__text2 section__text2">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                    </div>
+                    <div class="about-img">
+                        <img src="/img/about/about-img.png" alt="Изображение из блока о нас">
+                        <div class="about__yellow-cube yellow-cube"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="three" class="team">
+            <div class="wrapper">
+                <div class="team-row section__row">
+                    <div class="team-title">OUR TEAM</div>
+                    <div class="team-img">
+                        <img src="/img/team/team-img.png" alt="Изображение блока наша команда">
+                        <div class="team__yellow-cube yellow-cube"></div>
+                    </div>
+                    <div class="team-content">
+                        <h2>MASTER CHEF</h2>
+                        <span class="team__yellow-line line"></span>
+                        <p class="team-content__text1 section__text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                        <p class="team-content__text2 section__text2">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="four" class="booking">
+            <div class="wrapper">
+                <div class="booking-row section__row">
+                    <div class="booking-content">
+                        <h2>book a table</h2>
+                        <span class="team__yellow-line line"></span>
+                        <form class="booking-form">
+                            <label class="booking-form__input label-width" >
+                                <input class="booking-form__name input-style" type="text" name="Имя" placeholder="Name">
+                            </label>
+                            <label class="booking-form__input label-width">
+                                <input class="booking-form__email input-style" type="email" placeholder="Email"  name="email">
+                            </label>
+                            <label class="booking-form__input label-width" >
+                                <input class="booking-form__tel input-style" type="tel" name="Телефон" placeholder="Phone">
+                            </label>
+                            <select class="booking-form__select label-width input-style" name="People">
+                                <option value="Friday" selected>People</option>
+                                <option value="Saturday">2</option>
+                                <option value="Sunday">3</option>
+                                <option value="Sunday">4</option>
+                                <option value="Sunday">5</option>
+                              </select>
+                            <label class="booking-form__input label-width">
+                                <input class="booking-form__date input-style" type="date" value="2020-09-01" name="Дата">
+                            </label>
+
+                            <select class="booking-form__select label-width input-style" name="Time">
+                                <option value="Friday" selected>Time</option>
+                                <option value="Saturday">13:00</option>
+                                <option value="Sunday">14:00</option>
+                                <option value="Sunday">15:00</option>
+                            </select>
+                            <label class="booking-form__input">
+                                <input class="booking-form__button hover-wiht" type="submit" value="BOOK NOW">
+                            </label>
+                        </form>
+                    </div>
+                    <div class="booking-img">
+                        <img src="/img/booking/booking-img.png" alt="Изображение блока наша команда">
+                        <div class="booking__yellow-cube yellow-cube"></div>
+                    </div>
+                    <div class="booking-schedule">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM, Phone: +40 729 131 637/+40 726 458 782</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="specialties">
+            <div class="wrapper">
+                <div class="specialties-title">specialties</div>
+                <div class="specialties-row section__row">
+                    <div class="specialties-img">
+                        <img src="/img/specialties/specialties-img.png" alt="Изображение блока наша команда">
+                        <div class="specialties__yellow-cube yellow-cube"></div>
+                    </div>
+                    <div class="specialties-content">
+                        <h2>chocolate pancakes</h2>
+                        <span class="specialties__yellow-line line"></span>
+                        <p class="specialties-content__text1 section__text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                        <p class="specialties-content__text2 section__text2">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="five" class="menu">
+            <div class="wrapper">
+                <div class="title-text">
+                    <h2>DELICIOUS MENU</h2>
+                    <span class="menu__yellow-line line"></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                </div>
+                <div class="submenu">
+                    <ul class="submenu-items">
+                        <li class="submenu-item">SOUPE</li>
+                        <li class="submenu-item">PIZZA</li>
+                        <li class="submenu-item">PASTA</li>
+                        <li class="submenu-item">DESERT</li>
+                        <li class="submenu-item">WINE</li>
+                        <li class="submenu-item">BEER</li>
+                        <li class="submenu-item">DRINKS</li>
+                    </ul>
+                </div>
+                <div class="dishes">
+                    <div class="dishes-item">
+                        <p class="dishes-item__text1">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="dishes-item__text2">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="dishes-item">
+                        <p class="dishes-item__text1">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="dishes-item__text2">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="dishes-item">
+                        <p class="dishes-item__text1">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="dishes-item__text2">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="dishes-item">
+                        <p class="dishes-item__text1">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="dishes-item__text2">Integer ullamcorper neque eu purus euismod</p>
+                    </div>                    
+                    <div class="dishes-item">
+                        <p class="dishes-item__text1">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="dishes-item__text2">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="dishes-item">
+                        <p class="dishes-item__text1">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="dishes-item__text2">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="dishes-item">
+                        <p class="dishes-item__text1">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="dishes-item__text2">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="dishes-item">
+                        <p class="dishes-item__text1">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="dishes-item__text2">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="dishes-item">
+                        <p class="dishes-item__text1">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="dishes-item__text2">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="dishes-item">
+                        <p class="dishes-item__text1">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="dishes-item__text2">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="dishes-item">
+                        <p class="dishes-item__text1">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="dishes-item__text2">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="dishes-item">
+                        <p class="dishes-item__text1">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="dishes-item__text2">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="dishes-item">
+                        <p class="dishes-item__text1">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="dishes-item__text2">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="dishes-item">
+                        <p class="dishes-item__text1">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="dishes-item__text2">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="dishes-item">
+                        <p class="dishes-item__text1">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="dishes-item__text2">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="dishes-item">
+                        <p class="dishes-item__text1">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="dishes-item__text2">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="dishes-item">
+                        <p class="dishes-item__text1">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="dishes-item__text2">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="dishes-item">
+                        <p class="dishes-item__text1">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="dishes-item__text2">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="dishes-item">
+                        <p class="dishes-item__text1">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="dishes-item__text2">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="dishes-item">
+                        <p class="dishes-item__text1">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="dishes-item__text2">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="dishes-item">
+                        <p class="dishes-item__text1">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+                        <p class="dishes-item__text2">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sixth" class="events">
+            <div class="wrapper">
+                <div class="events-title">PRIVATE EVENTS</div>
+                <div class="events-row">
+                    <div class="events-content__left">
+                        <h2 class="content-left__text">weddings</h2>
+                        <div class="events-img__left"><img src="/img/events/events-left.png" alt="Свадьба"></div>
+                        <div class="events-left__yellow-cube yellow-cube"></div>
+                    </div>
+                    <div class="events-content__right">
+                        <h2 class="content-right__text">corporate pzrties</h2>
+                        <div class="events-img__right"><img src="/img/events/events-right.png" alt="корпоратив"></div>
+                        <div class="events-right__yellow-cube yellow-cube"></div>
+                    </div>
+                </div>
+                <div class="events-info">For private events please call: +40 729 131 637/+40 726 458 782 or use the contact form.</div>
+            </div>
+        </section>
+
+        <div id="seven" class="galerie">
+            <div class="wrapper-slider">
+                <div class="slider">
+                    <div class="slider-item">
+                        <picture>
+                            <source type="image/webp" srcset="img/galerie/1.webp">
+                            <source type="image/jpeg" srcset="img/galerie/1.jpg">
+                            <img src="img/galerie/1.jpg" alt="рав 4" class="slider__img">
+                        </picture>
+                    </div>
+                    <div class="slider-item">
+                        <picture>
+                            <source type="image/webp" srcset="img/galerie/2.webp">
+                            <source type="image/jpeg" srcset="img/galerie/2.jpg">
+                            <img src="img/galerie/2.jpg" alt="рав 4" class="slider__img">
+                        </picture>
+                    </div>                
+                    <div class="slider-item">
+                        <picture>
+                            <source type="image/webp" srcset="img/galerie/3.webp">
+                            <source type="image/jpeg" srcset="img/galerie/3.jpg">
+                            <img src="img/galerie/3.jpg" alt="рав 4" class="slider__img">
+                        </picture>
+                    </div>                
+                    <div class="slider-item">
+                        <picture>
+                            <source type="image/webp" srcset="img/galerie/4.webp">
+                            <source type="image/jpeg" srcset="img/galerie/4.jpg">
+                            <img src="img/galerie/4.jpg" alt="рав 4" class="slider__img">
+                        </picture>
+                    </div>
+                    <div class="slider-item">
+                        <picture>
+                            <source type="image/webp" srcset="img/galerie/1.webp">
+                            <source type="image/jpeg" srcset="img/galerie/1.jpg">
+                            <img src="img/galerie/1.jpg" alt="рав 4" class="slider__img">
+                        </picture>
+                    </div>
+                    <div class="slider-item">
+                        <picture>
+                            <source type="image/webp" srcset="img/galerie/2.webp">
+                            <source type="image/jpeg" srcset="img/galerie/2.jpg">
+                            <img src="img/galerie/2.jpg" alt="рав 4" class="slider__img">
+                        </picture>
+                    </div>                
+                    <div class="slider-item">
+                        <picture>
+                            <source type="image/webp" srcset="img/galerie/3.webp">
+                            <source type="image/jpeg" srcset="img/galerie/3.jpg">
+                            <img src="img/galerie/3.jpg" alt="рав 4" class="slider__img">
+                        </picture>
+                    </div>                
+                    <div class="slider-item">
+                        <picture>
+                            <source type="image/webp" srcset="img/galerie/4.webp">
+                            <source type="image/jpeg" srcset="img/galerie/4.jpg">
+                            <img src="img/galerie/4.jpg" alt="рав 4" class="slider__img">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="eight" class="contact">
+            <div class="wrapper">
+                <div class="contact-title">
+                    <h2>CONTACT</h2>
+                    <span class="contact__yellow-line line"></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                </div>
+                <div class="contact-form__row">
+                    <form class="contact-form">
+                        <label class="contact-form__input">
+                            <input class="contact-form__name input-style contact-input__width" type="text" name="Name" placeholder="Name">
+                        </label>
+                        <label class="contact-form__input">
+                            <input class="contact-form__email input-style contact-input__width" type="email" placeholder="Email"  name="email">
+                        </label>
+                        <label class="contact-form__input">
+                            <input class="contact-form__tel input-style contact-input__width" type="tel" name="Phone" placeholder="Phone">
+                        </label>
+                        <label class="contact-form__message">
+                            <input class="contact-input__message input-style" type="text" name="Message" placeholder="Message">
+                        </label>
+                        <address class="contact-items">
+                            <a href="#" class="contact-items__adres contact-adress__style">5th London Boulevard, U.K.</a>
+                            <a href="tel:+40729131637" class="contact-items__tel contact-adress__style">+40 729 131 637/+40 726 458 782</a>
+                            <a href="office@mindblister.com" class="contact-items__email contact-adress__style">office@mindblister.com</a>
+                        </address>
+                        <label class="contact-form__btn">
+                            <input class="contact-form__button hover-wiht" type="submit" value="SEND MESSAGE">
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2480.053596150512!2d-0.074821283991216!3d51.567250979644975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761c67c56bab8b%3A0xfe26d238fad51437!2sU%20K%20T%20Mini%20Supermarket!5e0!3m2!1sru!2sru!4v1599830753407!5m2!1sru!2sru" width="1440" height="475" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="copyright">© Copyright Mindblister  2019</div>
+    </footer>
+</body>
+</html>
